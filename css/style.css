@@ -1,0 +1,157 @@
+:root {
+    --main-color: #0078FF;
+    --secondary-color: #CDE1F8;
+    --bg-main: #F5F5F5;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.blue-layer {
+    background-color: #0077ffbe;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.bg-main {
+    background-color: var(--bg-main) !important;
+}
+
+
+#home {
+    background-image: url("../images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.content {
+    min-height: 100%;
+}
+
+.icons i {
+    height: 1.25em;
+}
+
+
+.inner {
+    left: 0px;
+    height: 10px;
+    background-color: var(--main-color) !important;
+}
+
+.outter {
+    height: 10px;
+    background-color: var(--secondary-color) !important;
+
+}
+
+#statistics {
+    background-image: url(../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.service .icon span,
+.statistics-icon span {
+    border-width: 10px !important;
+    border-color: var(--main-color) !important;
+    transition: all .3s;
+}
+.icons div span{
+    transition: all .4s;
+}
+
+.icons div span:hover {
+    cursor:pointer;
+}
+
+.service:hover .icon span,
+.icons div span:hover {
+    border-color: var(--secondary-color) !important;
+    background-color: var(--main-color) !important;
+    color: white;
+    
+}
+
+.statistics-icon span {
+    color: var(--secondary-color) !important;
+    border: 10px solid var(--secondary-color) !important;
+
+}
+
+.work-image {
+    overflow: hidden;
+}
+
+.work-box .work-image img {
+    transition: 1s;
+}
+
+.work-box:hover .work-image img {
+    transform: scale(1.4);
+}
+
+.post-footer {
+    border-top: 2px solid #e6e6e6 !important;
+}
+
+#slider,
+#contact-us {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.icons div span {
+    border-width: 3px !important;
+    border-color: var(--main-color) !important;
+}
+
+.btn.btn-primary{
+    border:5px solid rgb(255, 255, 255) ;
+    transition:all .3s;
+}   
+.btn.btn-primary:hover{
+    border-color:var(--secondary-color) ;
+}
+
+footer{
+    background-color: #0062D3;
+    
+}
+
+.sm-line::after{
+    content: "";
+    position:absolute;
+    width:38px;
+    height:5px;
+    background-color:var(--main-color);
+    bottom:0px;
+    right:50%;
+    transform: translateX(19px);
+}
+
+.lg-line::after{
+    content: "";
+    position:absolute;
+    width:100px;
+    height:3px;
+    background-color:var(--main-color);
+    bottom:0px;
+    left:0px;
+}
